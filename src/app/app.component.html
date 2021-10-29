@@ -1,11 +1,11 @@
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light nv">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="assets\title.gif" alt="" width="70px">
+        <img src="assets\navbarimg.png" alt="" width="60px">
       </a>
-      <p class="p-1 m-2 title">healthcare</p>
+     
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -15,9 +15,17 @@
           <li class="nav-item">
             <a class="nav-link"  routerLink="home" routerLinkActive="active">Home</a>
           </li>
-          <!-- REGISTER PATH -->
+          <!-- SCHEMES PATH -->
           <li class="nav-item">
             <a class="nav-link" routerLink="schemes" routerLinkActive="active">Schemes</a>
+          </li>
+          <!-- REGISTER PATH -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a>
+          </li>
+           <!-- REGISTER PATH -->
+           <li class="nav-item">
+            <a class="nav-link" routerLink="search" routerLinkActive="active">Search</a>
           </li>
           
           <!-- CONTACTUS PATH -->
@@ -39,4 +47,4 @@
     <router-outlet></router-outlet>
   </div>
   
- 
+ <app-footer class="mt-auto"></app-footer>

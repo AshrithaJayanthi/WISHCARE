@@ -1,1 +1,24 @@
-<p>schemes works!</p>
+<table class="table text-center p-3 m-3">
+    <thead>
+        <th>Name</th>
+        <th>Details</th>
+        <th>Eligibility</th>
+        <th>Type</th>
+    </thead>
+    <tbody *ngFor="let scheme of schemesObj">
+        <tr>
+            <td>
+               {{scheme.schemename}}
+            </td>
+            <td>
+                {{scheme.details}}
+            </td>
+            <td>
+                {{scheme.eligibility}}
+            </td>
+            <td>
+                {{scheme.type}}
+            </td>
+        </tr>
+    </tbody>
+</table>

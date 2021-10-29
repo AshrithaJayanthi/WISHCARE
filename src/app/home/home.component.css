@@ -1,0 +1,96 @@
+/* img{display: block;
+   
+    position:absolute;
+} */
+.class1{
+    background-color: #b8e3bf;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 87px;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px #b1e0b8;
+
+}
+.tagline{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 6px  #eaeaea ;
+   
+}
+
+img{
+
+}
+
+.intro{
+    background-color: #d8efdb;
+}
+.intro1{
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.intro2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+   
+}
+.div3{
+    background-color: #faeddb;
+   
+}
+.trend{
+    font-family: 'Fuggles', cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 8px #fdc4c4;
+    font-size: 55px;
+
+}
+h4{
+    font-family: 'Zen Loop', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+h6{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    font-size: 25px;
+}
+/*features section*/
+#features{
+
+
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    }
+    .feature-box{
+      padding: 5%;
+    
+    }
+    .feature-title{
+          font-size: 1.5rem;
+    }
+    .icon{
+      color: #183a1d;
+      margin-bottom: 1rem;
+    }
+    .icon:hover{
+      color: #fafad7;
+    }
+
+.img1{
+
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+
+}
+button {
+    margin: 50px;
+    font-family: inherit;
+  }

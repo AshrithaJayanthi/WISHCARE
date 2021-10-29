@@ -1,0 +1,11 @@
+<div class="form-group">
+    <input type="text" class="form-control mb-4" placeholder="Search nearby hospitals..." [(ngModel)]="SearchTerm" id="listSearch">
+  </div>
+  <div *ngIf="!nohsptls">
+  <div class="card mb-1" *ngFor="let hsptl of hsptlObjs | search: SearchTerm">
+    <div class="card-body">
+      <h5 class="card-title">{{hsptl['hsptlName']}}</h5>
+      <p class="card-text">{{hsptl['hsptlAddress']}}</p>
+    </div>
+  </div>
+</div>
