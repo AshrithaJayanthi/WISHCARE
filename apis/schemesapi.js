@@ -6,13 +6,21 @@ schemeApi.use(exp.json())
 schemeApi.get("/getschemes",expressErrorHandler(async (req,res,next)=>{
     let schemeCollectionObj=req.app.get("schemeCollectionObj")
     let schemeList=await schemeCollectionObj.find().toArray()
-    res.send({message:schemeList})
+    let centralSchemeList=schemeList.filter((csl)=>csl.type=='central')
+    let stateSchemeList=schemeList.filter((ssl)=>ssl.type=='state')
+    if(schemeList.length==0){
+        res.send({message:'No schemes'})
+    }
+    else
+    {
+        res.send({message:[centralSchemeList,stateSchemeList]})
+    }
 }))
 
-schemeApi.get("/getscheme/:schemename",expressErrorHandler(async (req,res,next)=>{
-    let sn=req.params.schemename
+schemeApi.get("/:sno",expressErrorHandler(async (req,res,next)=>{
+    let sn=(+ req.params.sno)
     let schemeCollectionObj=req.app.get("schemeCollectionObj")
-    let schemeObj=await schemeCollectionObj.findOne({schemename:sn})
+    let schemeObj=await schemeCollectionObj.findOne({sno:sn})
     if(schemeObj===null)
     {
         res.send({message:"Scheme doesn't exist"})
@@ -50,5 +58,4 @@ schemeApi.delete("/deletescheme/:sno",expressErrorHandler(async (req,res,next)=>
         res.send({message:"scheme deleted"})
     }
 }))
-//export 
 module.exports=schemeApi

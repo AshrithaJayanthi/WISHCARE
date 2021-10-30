@@ -1,0 +1,21 @@
+h2{
+    
+    font-family: "New Tegomin", serif;
+    font-weight: bolder;
+}
+label{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+.sumbtn{
+    background-color: #ccb594;
+    font-size:15px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.reg{
+   background-color: #e5d9c8
+}
+.sup{
+    font-family: 'Cabin', sans-serif;
+}

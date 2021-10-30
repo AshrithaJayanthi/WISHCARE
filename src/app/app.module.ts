@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
 import { SearchPipe } from './search.pipe';
+import { ContactusComponent } from './contactus/contactus.component';
+import { SchemedetailsComponent } from './schemedetails/schemedetails.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SearchPipe } from './search.pipe';
     RegisterComponent,
     FooterComponent,
     SearchComponent,
-    SearchPipe
+    SearchPipe,
+    ContactusComponent,
+    SchemedetailsComponent
   ],
   imports: [
     BrowserModule,

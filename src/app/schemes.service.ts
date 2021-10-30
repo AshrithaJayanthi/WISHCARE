@@ -11,4 +11,8 @@ export class SchemesService {
   getSchemes():Observable<any>{
     return this.hc.get('scheme/getschemes')
   }
+
+  getSchemeDetails(sno):Observable<any>{
+    return this.hc.get("scheme/"+sno)
+  }
 }

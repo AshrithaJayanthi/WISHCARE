@@ -1,11 +1,15 @@
+<div >
+
+
 <div class="form-group">
-    <input type="text" class="form-control mb-4" placeholder="Search nearby hospitals..." [(ngModel)]="SearchTerm" id="listSearch">
+    <input type="text" class="form-control mb-4 mt-2 searchbar" placeholder="Search nearby hospitals..." [(ngModel)]="SearchTerm" id="listSearch">
   </div>
   <div *ngIf="!nohsptls">
   <div class="card mb-1" *ngFor="let hsptl of hsptlObjs | search: SearchTerm">
     <div class="card-body">
-      <h5 class="card-title">{{hsptl['hsptlName']}}</h5>
-      <p class="card-text">{{hsptl['hsptlAddress']}}</p>
+      <h5 class="card-title hname">{{hsptl['hsptlName']}}</h5>
+      <p class="card-text hadd">{{hsptl['hsptlAddress']}}</p>
     </div>
   </div>
+</div> 
 </div>

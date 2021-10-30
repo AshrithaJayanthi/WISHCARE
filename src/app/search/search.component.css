@@ -1,0 +1,16 @@
+.searchbar{
+
+    background-color:#f2ece3;
+   
+}
+.card-body{
+    background-color: #e3e5c8;
+}
+.hname{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.hadd{
+    font-family: 'Cabin', sans-serif;
+}
